@@ -1,14 +1,18 @@
-import { FaqsContainer } from "./containers/accordion";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import * as ROUTES from "./constants/routes";
+import { FaqsContainer } from "./containers/faqs";
 import { FooterContainer } from "./containers/footer";
 import { JumbotronContainer } from "./containers/jumbotron";
 
 function App() {
   return (
-    <>
-      <JumbotronContainer />
-      <FaqsContainer />
-      <FooterContainer />
-    </>
+    <Router>
+      <Route exact path={ROUTES.HOME}>
+        <JumbotronContainer />
+        <FaqsContainer />
+        <FooterContainer />
+      </Route>
+    </Router>
   );
 }
 
