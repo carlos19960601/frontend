@@ -1,4 +1,4 @@
-import { Button, Container, Input, Text } from "./styles/opt-form";
+import { Break, Button, Container, Input, Text } from "./styles/opt-form";
 
 function OptForm(props) {
   let { children, ...restProps } = props;
@@ -28,7 +28,7 @@ OptForm.Text = function OptFormText(props) {
 
 OptForm.Break = function OptFormBreak(props) {
   let { ...restProps } = props;
-  return <Text {...restProps} />;
+  return <Break {...restProps} />;
 };
 
 export default OptForm;
