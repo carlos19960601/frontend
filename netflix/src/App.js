@@ -4,7 +4,8 @@ import { IsUserRedirect, ProtectedRoute } from "./helpers/routes";
 import { Browse, Home, SignIn, SignUp } from "./pages";
 
 function App() {
-  const user = null;
+  // const user = useAuthListener();
+  const user = {};
 
   return (
     <Router>
