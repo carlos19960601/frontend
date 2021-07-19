@@ -1,5 +1,5 @@
 import { useContent } from "../hooks";
-import {selectionFilter} from "../utils";
+import { selectionFilter } from "../utils";
 
 function Browse() {
   const { series } = useContent("series");

@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { FirebaseContext } from "../context/firebase";
 import { SelectProfileContainer } from "./profiles";
+
 export function BrowseConatiner(props) {
   let { slides } = props;
 
